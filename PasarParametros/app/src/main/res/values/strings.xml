@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PasarParametros</string>
+
+    <string name="nombre1">Nombre</string>
+    <string name="button">Siguiente</string>
+
+    <string name="nombre2">Nombre</string>
+    <string name="button2">Regresar</string>
+</resources>

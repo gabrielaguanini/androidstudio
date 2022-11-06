@@ -1,0 +1,9 @@
+AGREGAR EN ANDROIDMANIFEST.XML ESTAS LINEA DE CODIGO 
+
+ <application
+
+android:usesCleartextTraffic="true"/>
+
+
+
+ <uses-permission android:name="android.permission.INTERNET"/> ---> ESTE VA ARRIBA DE APPLICATION

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Intent</string>
+
+    <string name="textView">Primer Activity</string>
+    <string name="button">Siguiente</string>
+
+    <string name="textView2">Segundo Activity</string>
+    <string name="button2">Anterior</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SharedPreferencesPractica</string>
+
+    <string name="textView">Ingresa tu nombre</string>
+    <string name="button">Guardar</string>
+
+
+</resources>

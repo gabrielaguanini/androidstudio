@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MiApp2</string>
+    <string name="txt_view_String">Estatus del Alumno</string>
+    <string name="txt_matematicas_String">Matematica</string>
+    <string name="txt_fisica_String">Fisica</string>
+    <string name="txt_quimica_String">Quimica</string>
+    <string name="button_String">Evaluar</string>
+</resources>
