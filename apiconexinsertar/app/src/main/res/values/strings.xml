@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">apiconexinsertar</string>
+
+    <string name="etDireccion">Direccion</string>
+    <string name="etDni">D.N.I.</string>
+    <string name="etNombre">Nombre</string>
+    <string name="etSalario">Salario</string>
+    <string name="etTelefono">Telefono</string>
+    <string name="boton">Insertar</string>
+</resources>

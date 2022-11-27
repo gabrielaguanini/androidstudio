@@ -20,8 +20,8 @@
 
     <TextView
         android:id="@+id/tv1"
-        android:layout_width="326dp"
-        android:layout_height="469dp"
+        android:layout_width="408dp"
+        android:layout_height="483dp"
         android:hint="@string/tv1"
         android:textAlignment="center"
         android:textSize="24sp"
