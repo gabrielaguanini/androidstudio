@@ -19,6 +19,8 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import models.CustomJsonObjectRequest;
+
 public class MainActivity extends AppCompatActivity {
     private EditText etDireccion, etDni, etNombre, etSalario, etTelefono;
     private RequestQueue rq;
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void insertar(View view){
 
-        String url ="https://appdatabaseheroku.herokuapp.com/agregardatos";
+        String url ="http://192.168.100.85:8080/agregardatos";
         JSONObject parametros= new JSONObject();
 
         try {
@@ -50,17 +52,18 @@ public class MainActivity extends AppCompatActivity {
             parametros.put("salario", etSalario.getText().toString());
             parametros.put("telefono", etTelefono.getText().toString());
 
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        JsonObjectRequest requerimiento = new JsonObjectRequest(Request.Method.POST,
+        CustomJsonObjectRequest requerimiento = new CustomJsonObjectRequest(Request.Method.POST,
                 url,
                 parametros,
                 new Response.Listener<JSONObject>() {
+
                     @Override
                     public void onResponse(JSONObject response) {
-
 
 
                                    Toast.makeText(MainActivity.this, "Cargado correctamente", Toast.LENGTH_LONG).show();
@@ -69,18 +72,23 @@ public class MainActivity extends AppCompatActivity {
                                      etNombre.setText("");
                                      etSalario.setText("");
                                      etTelefono.setText("");
-
+                        Log.e("mira el error", response.toString());
                              }
 
 
                 },
+
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                        Toast.makeText(MainActivity.this, error.toString(), Toast.LENGTH_LONG).show();
-                        Log.e("mira el error", error.toString());
+
                     }
                 });
         rq.add(requerimiento);
+
+
    }
+
+
        }

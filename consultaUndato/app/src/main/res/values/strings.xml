@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">consultaUndato</string>
+
+    <string name="id">ID</string>
+    <string name="direccion">Direccion</string>
+    <string name="dni">DNI</string>
+    <string name="nombre">Nombre</string>
+    <string name="salario">Salario</string>
+    <string name="telefono">Telefono</string>
+    <string name="boton">Consultar</string>
+</resources>
