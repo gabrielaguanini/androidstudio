@@ -45,12 +45,24 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
 
+
                         try {
-                            et_direccion.setText(response.get("direccion").toString());
-                            et_dni.setText(response.get("dni").toString());
-                            et_nombre.setText(response.get("nombre").toString());
-                            et_salario.setText(response.get("salario").toString());
-                            et_telefono.setText(response.get("telefono").toString());
+
+                            if(response.length()>0) {
+                                et_direccion.setText(response.get("direccion").toString());
+                                et_dni.setText(response.get("dni").toString());
+                                et_nombre.setText(response.get("nombre").toString());
+                                et_salario.setText(response.get("salario").toString());
+                                et_telefono.setText(response.get("telefono").toString());
+                            } else {
+                                Toast.makeText(MainActivity.this,"no existe el id", Toast.LENGTH_LONG ).show();
+                                et_direccion.setText("");
+                                et_dni.setText("");
+                                et_nombre.setText("");
+                                et_salario.setText("");
+                                et_telefono.setText("");
+                            }
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -60,8 +72,15 @@ public class MainActivity extends AppCompatActivity {
                    @Override
                    public void onErrorResponse(VolleyError error) {
 
+                      Toast.makeText(MainActivity.this,"no existe el id", Toast.LENGTH_LONG ).show();
                       Toast.makeText(MainActivity.this,error.getMessage(), Toast.LENGTH_LONG ).show();
 
+                       et_id.setText("");
+                       et_direccion.setText("");
+                       et_dni.setText("");
+                       et_nombre.setText("");
+                       et_salario.setText("");
+                       et_telefono.setText("");
             }
         });
         rq.add(requerimiento);
