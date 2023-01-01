@@ -15,6 +15,8 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import models.Datospersonales;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText et_id, et_direccion, et_dni, et_nombre, et_salario, et_telefono;
@@ -42,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 url,
                 null,
                 new Response.Listener<JSONObject>() {
+
+
                     @Override
                     public void onResponse(JSONObject response) {
 
@@ -69,18 +73,18 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                 }, new Response.ErrorListener() {
-                   @Override
-                   public void onErrorResponse(VolleyError error) {
+            @Override
+            public void onErrorResponse(VolleyError error) {
 
-                      Toast.makeText(MainActivity.this,"no existe el id", Toast.LENGTH_LONG ).show();
-                      Toast.makeText(MainActivity.this,error.getMessage(), Toast.LENGTH_LONG ).show();
+                Toast.makeText(MainActivity.this,"no existe el id", Toast.LENGTH_LONG ).show();
+                Toast.makeText(MainActivity.this,error.getMessage(), Toast.LENGTH_LONG ).show();
 
-                       et_id.setText("");
-                       et_direccion.setText("");
-                       et_dni.setText("");
-                       et_nombre.setText("");
-                       et_salario.setText("");
-                       et_telefono.setText("");
+                et_id.setText("");
+                et_direccion.setText("");
+                et_dni.setText("");
+                et_nombre.setText("");
+                et_salario.setText("");
+                et_telefono.setText("");
             }
         });
         rq.add(requerimiento);

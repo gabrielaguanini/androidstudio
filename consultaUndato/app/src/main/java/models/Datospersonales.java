@@ -3,7 +3,7 @@ package models;
 
 import org.json.JSONObject;
 
-public class Datospersonales extends JSONObject{
+public class Datospersonales{
 
     private int id;
     private String direccion;
@@ -31,7 +31,7 @@ public class Datospersonales extends JSONObject{
         this.id = id;
     }
 
-    public String getDireccion(String direccion) {
+    public String getDireccion() {
         return direccion;
     }
 
@@ -47,7 +47,7 @@ public class Datospersonales extends JSONObject{
         this.dni = dni;
     }
 
-    public String getNombre(String nombre) {
+    public String getNombre() {
         return nombre;
     }
 
@@ -70,6 +70,4 @@ public class Datospersonales extends JSONObject{
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-
-
 }
