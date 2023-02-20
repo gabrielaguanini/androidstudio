@@ -1,0 +1,45 @@
+Nombre para mostrar
+loginapiINSPT
+Id. de aplicación (cliente)
+055c6073-b493-473d-948c-8560a32ec9b5
+Identificador de objeto
+8420ce53-a72d-4e4f-a217-a4a1c87aa576
+Id. de directorio (inquilino)
+c8a2229b-d1e3-4b14-bab5-6109df5ae503
+Tipos de cuenta compatibles
+Solo mi organización
+Credenciales de cliente
+Agregar un certificado o secreto
+URI de redirección
+Agregar un URI de redirección
+URI de id. de aplicación
+Agregar un URI de id. de aplicación
+Aplicación administrada en directorio local
+loginapiINSPT
+----------------------
+
+valor
+lhH8Q~VoFIv49ug4QEm-OmZHKbv2SlJXVXlRvcFS
+
+Id. de secreto
+81152275-966b-4be8-b4ee-bac03de97be2
+
+
+--------------------------
+
+contraseña temporal
+
+Juwu4803
+
+--------------------------
+
+# Enable related features.
+spring.cloud.azure.active-directory.enabled=true
+# Specifies your Active Directory ID:
+spring.cloud.azure.active-directory.profile.tenant-id=c8a2229b-d1e3-4b14-bab5-6109df5ae503
+# Specifies your App Registration's Application ID:
+spring.cloud.azure.active-directory.credential.client-id=055c6073-b493-473d-948c-8560a32ec9b5
+# Specifies your App Registration's secret key:
+spring.cloud.azure.active-directory.credential.client-secret=81152275-966b-4be8-b4ee-bac03de97be2
+
+

@@ -1,0 +1,33 @@
+dmwE4Jt2wgNjV1wysSHq8iK5nVw=
+
+
+com.example.login365pruebaandroid:host="com.example.login365prueba"{
+  "client_id" : "7c6d363a-389d-490a-af1f-850738f63f45",
+  "authorization_user_agent" : "DEFAULT",
+  "redirect_uri" : "msauth://com.example.login365prueba/dmwE4Jt2wgNjV1wysSHq8iK5nVw%3D",
+  "authorities" : [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADMyOrg",
+        "tenant_id": "c8a2229b-d1e3-4b14-bab5-6109df5ae503"
+      }
+    }
+  ]
+}
+
+
+acamargo@inti.gob.ar
+
+
+a095hkj
+
+
+msauth://com.example.login365prueba/M61nf%2BaC69kCXmFY1ejcX83rDNc%3D
+
+
+
+com.microsoft.identity.client.exception.MsalClientException: the redirect uri in the configuration file doesn´t match with the one generated with package name and signature hash. Please verify in the config file and your app registration in azure portal
+
+com.microsoft.graph.http.GraphServiceException: Error code:BadRequest
+error message: Tenant does not have a SPO license

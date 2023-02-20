@@ -1,0 +1,22 @@
+dmwE4Jt2wgNjV1wysSHq8iK5nVw=
+
+
+URI de redirección
+
+msauth://com.example.login365modificado/dmwE4Jt2wgNjV1wysSHq8iK5nVw%3D
+
+
+com.example.login365modificadoandroid:host="com.example.login365modificado"{
+  "client_id" : "60390559-2097-414e-8adb-c28b041d1425",
+  "authorization_user_agent" : "DEFAULT",
+  "redirect_uri" : "msauth://com.example.login365modificado/dmwE4Jt2wgNjV1wysSHq8iK5nVw%3D",
+  "authorities" : [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADMyOrg",
+        "tenant_id": "c8a2229b-d1e3-4b14-bab5-6109df5ae503"
+      }
+    }
+  ]
+}
